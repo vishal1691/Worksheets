@@ -1,0 +1,66 @@
+ML Worksheet 3
+
+1. Linear Kernel is used when the data is Linearly separable, that is, it can be separated using a single Line. It is one of the most common kernels to be used. Training a SVM with a Linear Kernel is Faster than with any other Kernel.
+
+In machine learning, the radial basis function kernel, or RBF kernel, is a popular kernel function used in various kernelized learning algorithms. In particular, it is commonly used in support vector machine classification.
+
+In machine learning, the polynomial kernel is a kernel function commonly used with support vector machines (SVMs) and other kernelized models, that represents the similarity of vectors (training samples) in a feature space over polynomials of the original variables, allowing learning of non-linear models. 
+
+2. A residual sum of squares (RSS) is a statistical technique used to measure the amount of variance in a data set that is not explained by a regression model. Regression is a measurement that helps determine the strength of the relationship between a dependent variable and a series of other changing variables or independent variables.
+
+The residual sum of squares measures the amount of error remaining between the regression function and the data set. A smaller residual sum of squares figure represents a regression function. Residual sum of squares–also known as the sum of squared residuals–essentially determines how well a regression model explains or represents the data in the model.
+
+3. In statistics, the explained sum of squares (ESS), alternatively known as the model sum of squares or sum of squares due to regression, is a quantity used in describing how well a model, often a regression model, represents the data being modelled. In particular, the explained sum of squares measures how much variation there is in the modelled values and this is compared to the total sum of squares ( TSS ), which measures how much variation there is in the observed data, and to the residual sum of squares, which measures the variation in the error between the observed data and modelled values.
+
+4. Gini index or Gini impurity measures the degree or probability of a particular variable being wrongly classified when it is randomly chosen. A Gini Index of 0.5 denotes equally distributed elements into some classes.
+
+5. Decision trees are prone to overfitting, especially when a tree is particularly deep. This is due to the amount of specificity we look at leading to smaller sample of events that meet the previous assumptions. This small sample could lead to unsound conclusions.
+
+6. Ensemble technique is a machine learning technique that combines several base models in order to produce one optimal predictive model. 
+
+7. Primary difference between bagging and boosting algorithms - 
+
+          Bagging                                   Boosting
+
+1. Simplest way of combining predictions       Way of combining predictions that belong to the different types. 
+   that belong to the same type. 
+
+2. Aim to decrease variance, not bias.         Aim to decrease bias, not variance. 
+
+3. Each model receives equal weight.           Models are weighed according to their performance. 
+
+4. Each model is built independently.          New models are influenced by performance of previously built models. 
+
+8. Out-of-bag (OOB) error, also called out-of-bag estimate, is a method of measuring the prediction error of random forests, boosted decision trees, and other machine learning models utilizing bootstrap aggregating (bagging) to sub-sample data samples used for training.
+
+9. Cross-validation is a resampling procedure used to evaluate machine learning models on a limited data sample.
+
+The procedure has a single parameter called k that refers to the number of groups that a given data sample is to be split into. As such, the procedure is often called k-fold cross-validation. When a specific value for k is chosen, it may be used in place of k in the reference to the model, such as k=10 becoming 10-fold cross-validation
+
+10. In machine learning, hyperparameter optimization or tuning is the problem of choosing a set of optimal hyperparameters for a learning algorithm.
+
+Hyperparameters are important because they directly control the behaviour of the training algorithm and have a significant impact on the performance of the model is being trained. A good choice of hyperparameters can really make an algorithm shine. 
+
+11. When the learning rate is too large, gradient descent can inadvertently increase rather than decrease the training error. […] When the learning rate is too small, training is not only slower, but may become permanently stuck with a high training error.
+
+12. Bias is the simplifying assumptions made by the model to make the target function easier to approximate. Variance is the amount that the estimate of the target function will change given different training data. Trade-off is tension between the error introduced by the bias and the variance. 
+
+13. Regularisation is a technique used to reduce the errors by fitting the function appropriately on the given training set and avoid overfitting.
+
+14.              Gradient boosting	                                               Adaptive Boosting
+
+This approach trains learners based upon minimising the                                 This method focuses on training upon misclassified observations. Alters the distribution of the 
+loss function of a learner (i.e., training on the residuals of the model)               training dataset to increase weights on sample observations that are difficult to classify. 
+
+  
+Weak learners are decision trees constructed in a greedy manner with split              The weak learners incase of adaptive boosting are a very basic form of decision tree known as stumps.
+points based on purity scores (i.e., Gini, minimise loss). Thus, larger trees 
+can be used with around 4 to 8 levels. Learners should still remain weak and 
+so they should be constrained (i.e., the maximum number of layers, 
+nodes, splits, leaf nodes)
+
+All the learners have equal weights in the case of gradient boosting. 
+The weight is usually set as the learning rate which is small in magnitude.	       The final prediction is based on a majority vote of the weak learners’ predictions weighted by their 
+                                                                                       individual accuracy.
+
+15. Logistic regression has traditionally been used to come up with a hyperplane that separates the feature space into classes. But if we suspect that the decision boundary is nonlinear we may get better results by attempting some nonlinear functional forms for the logit function
